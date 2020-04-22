@@ -11,7 +11,7 @@ jQuery(document).ready(async function news(){
                 console.log(articles);
                 output += `
                     <li class="article">
-                        <img class="articleimg" src="${articles.urlToImage}">
+                        <img class="article-img" src="${articles.urlToImage}">
                         <h2 class="article-title">${articles.title}</h2>
                         <p class="article-description">${articles.description}</p>
                         <span class="article-author">${articles.author}</span>
@@ -43,7 +43,7 @@ $(document).ready(function(){
                 console.log(articals);
               output +=`
                 <li class="article">
-                    <img class="articleimg" src="${articals[i].urlToImage}">
+                    <img class="article-img" src="${articals[i].urlToImage}">
                     <h2 class="article-title">${articals[i].title}</h2>
                     <p class="article-description">${articals[i].description}</p>
                     <span class="article-author">${articals[i].author}</span>
@@ -54,7 +54,7 @@ $(document).ready(function(){
               $("#news-articles").html(output);  
             }
             else{
-                $("#news-articles").html("<h2>Not Found</h2>");
+                $("#news-articles").html("<h2 class="not-found">Not Found</h2>");
             } 
           }   
         }); 
