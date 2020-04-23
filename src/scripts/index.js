@@ -60,7 +60,7 @@ $(document).ready(function(){
               $("#news-articles").html(output);  
             }
             else{
-                $("#news-articles").html("<h1 class="not-found">Not Found</h1>");
+                $("#news-articles").html("<h1 class="not-found">No article was found based on the search.</h1>");
             } 
           }   
         }); 
