@@ -10,15 +10,15 @@ jQuery(document).ready(async function news(){
             articles.articles.forEach((articles)=>{
                 output += `
                     <li class="article">
-                       <img class="article-img" src="${articles.urlToImage}"/>
+                       <img class="article-img" src="${article.urlToImage}"/>
 
-                       <h2 class="article-title">${articles.title}</h2>
+                       <h2 class="article-title">${article.title}</h2>
 
-                       <p class="article-description">${articles.description}</p>
+                       <p class="article-description">${article.description}</p>
 
-                       <span class="article-author">${articles.author}</span>
+                       <span class="article-author">${article.author}</span>
 
-                       <a class="article-link" href="${articles.url}" target="_blank"></a>
+                       <a class="article-link" href="${article.url}" target="_blank"></a>
                     </li>
                 `;
             });
@@ -42,18 +42,18 @@ $(document).ready(function(){
             let output = "";
             let articals = news.articles;
             
-            for(var i in articals){
+            for(var art in articals){
               output +=`
                 <li class="article">
-                   <img class="article-img" src="${articals[i].urlToImage}"/>
+                   <img class="article-img" src="${art.urlToImage}"/>
 
-                   <h2 class="article-title">${articals[i].title}</h2>
+                   <h2 class="article-title">${art.title}</h2>
 
-                   <p class="article-description">${articals[i].description}</p>
+                   <p class="article-description">${art.description}</p>
 
-                   <span class="article-author">${articals[i].author}</span>
+                   <span class="article-author">${art.author}</span>
 
-                   <a class="article-link" href="${articals[i].url}" target="_blank"></a>
+                   <a class="article-link" href="${art.url}" target="_blank"></a>
                 </li>`;
             }
             if(output !== ""){
