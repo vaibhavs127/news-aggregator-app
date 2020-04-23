@@ -49,7 +49,7 @@ body
   list-style-type: none;
 }
 
-.article 
+li.article 
 {
   padding: 16px;
   border-radius: 10px;
@@ -59,13 +59,13 @@ body
   transform: scale(1);
 }
 
-.article:hover 
+li.article:hover 
 {
   transform: scale(1.05);
   box-shadow: 0 0 20px 0 yellow;
 }
 
-.article-title 
+h2.article-title 
 {
   margin: 16px 0;
   line-height: 24px;
@@ -73,7 +73,7 @@ body
   overflow: hidden;
 }
 
-.article-description 
+p.article-description 
 {
   margin-bottom: 16px 0;
   overflow: hidden;
@@ -81,7 +81,7 @@ body
   color: #ddd;
 }
 
-.article-img 
+img.article-img 
 {
   width: 100%;
   height: auto;
@@ -91,14 +91,14 @@ body
   overflow: hidden;
 }
 
-.article-author 
+span.article-author 
 {
   display: block;
   color: lightblue;
   text-align: right;
 }
 
-.article-link 
+a.article-link 
 {
   position: absolute;
   top: 0;
