@@ -39,11 +39,11 @@ $(document).ready(function(){
           dataType: "json",
           
             success: function(news){
-            let output = "";
+            let output2 = "";
             let articals = news.articles;
             
             for(var art in articals){
-              output +=`
+              output2 +=`
                 <li class="article">
                    <img class="article-img" src="${art.urlToImage}"/>
 
@@ -56,8 +56,8 @@ $(document).ready(function(){
                    <a class="article-link" href="${art.url}" target="_blank"></a>
                 </li>`;
             }
-            if(output !== ""){
-              document.getElementById("news-articles").innerHTML=output;  
+            if(output2 !== ""){
+              document.getElementById("news-articles").innerHTML=output2;  
             }
             else{
                 $("#news-articles").html("<h1 class="not-found">No article was found based on the search.</h1>");
