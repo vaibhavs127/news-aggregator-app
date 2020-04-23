@@ -6,14 +6,7 @@ body
   background: #212121;
   color: white;
 }
-
-img 
-{
-  width: 100%;
-  height: auto;
-}
-
-.title 
+.site-title 
 {
   text-align: center;
   text-transform: uppercase;
@@ -92,7 +85,8 @@ img
 
 .article-img 
 {
-  height: 150px;
+  width: 100%;
+  height: auto;
   background: #000;
   display: flex;
   justify-content: center;
