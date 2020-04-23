@@ -10,15 +10,15 @@ jQuery(document).ready(async function news(){
             articles.articles.forEach((articles)=>{
                 output += `
                     <li class="article">
-                        <img class="article-img" src="${articles.urlToImage}">
+                       <img class="article-img" src="${articles.urlToImage}"/>
 
-                        <h2 class="article-title">${articles.title}</h2>
+                       <h2 class="article-title">${articles.title}</h2>
 
-                        <p class="article-description">${articles.description}</p>
+                       <p class="article-description">${articles.description}</p>
 
-                        <span class="article-author">${articles.author}</span>
+                       <span class="article-author">${articles.author}</span>
 
-                        <a class="article-link" href="${articles.url}" target="_blank"></a>
+                       <a class="article-link" href="${articles.url}" target="_blank"></a>
                     </li>
                 `;
             });
@@ -45,15 +45,15 @@ $(document).ready(function(){
             for(var i in articals){
               output +=`
                 <li class="article">
-                    <img class="article-img" src="${articals[i].urlToImage}">
+                   <img class="article-img" src="${articals[i].urlToImage}"/>
 
-                    <h2 class="article-title">${articals[i].title}</h2>
+                   <h2 class="article-title">${articals[i].title}</h2>
 
-                    <p class="article-description">${articals[i].description}</p>
+                   <p class="article-description">${articals[i].description}</p>
 
-                    <span class="article-author">${articals[i].author}</span>
+                   <span class="article-author">${articals[i].author}</span>
 
-                    <a class="article-link" href="${articals[i].url}" target="_blank"></a>
+                   <a class="article-link" href="${articals[i].url}" target="_blank"></a>
                 </li>`;
             }
             if(output !== ""){
