@@ -22,7 +22,7 @@ jQuery(document).ready(async function news(){
                     </li>
                 `;
             });
-            document.getElementById('news-articles').innerHTML=output;
+            document.getElementById("news-articles").innerHTML=output;
         })
         .catch((err) => console.log(err));
     });
@@ -57,7 +57,7 @@ $(document).ready(function(){
                 </li>`;
             }
             if(output !== ""){
-              $("#news-articles").html(output);  
+              document.getElementById("news-articles").innerHTML=output;  
             }
             else{
                 $("#news-articles").html("<h1 class="not-found">No article was found based on the search.</h1>");
