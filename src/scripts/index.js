@@ -1,3 +1,4 @@
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 const url ='http://newsapi.org/v2/top-headlines?' +
           'country=in&' +
           'apiKey=5da46edada014d7088420f175f3c0944';
