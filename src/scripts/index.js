@@ -27,46 +27,46 @@ jQuery(document).ready(async function news(){
         .catch((err) => console.log(err));
     });
 
-$(document).ready(function(){ 
-    $('#search').keypress(()=>{
-      let searchField = $("#search").val();
-      const url2 = `https://newsapi.org/v2/everything?q=${searchField}&apiKey=5da46edada014d7088420f175f3c0944`;
+// $(document).ready(function(){ 
+//     $('#search').keypress(()=>{
+//       let searchField = $("#search").val();
+//       const url2 = `https://newsapi.org/v2/everything?q=${searchField}&apiKey=5da46edada014d7088420f175f3c0944`;
       
-      if(searchField !== ""){
-        $.ajax({
-          url: url2,
-          method: "GET",
-          dataType: "json",
+//       if(searchField !== ""){
+//         $.ajax({
+//           url: url2,
+//           method: "GET",
+//           dataType: "json",
           
-            success: function(news){
-            let output2 = "";
-            let articals = news.articles;
+//             success: function(news){
+//             let output2 = "";
+//             let articals = news.articles;
             
-            for(var art in articals){
-              output2 +=`
-                <li class="article">
-                   <img class="article-img" src="${art.urlToImage}"/>
+//             for(var art in articals){
+//               output2 +=`
+//                 <li class="article">
+//                    <img class="article-img" src="${art.urlToImage}"/>
 
-                   <h2 class="article-title">${art.title}</h2>
+//                    <h2 class="article-title">${art.title}</h2>
 
-                   <p class="article-description">${art.description}</p>
+//                    <p class="article-description">${art.description}</p>
 
-                   <span class="article-author">${art.author}</span>
+//                    <span class="article-author">${art.author}</span>
 
-                   <a class="article-link" href="${art.url}" target="_blank"></a>
-                </li>`;
-            }
-            if(output2 !== ""){
-              document.getElementById("news-articles").innerHTML=output2;  
-            }
-            else{
-                $("#news-articles").html("<h1 class="not-found">No article was found based on the search.</h1>");
-            } 
-          }
-        });
-       }
-    });
-});
+//                    <a class="article-link" href="${art.url}" target="_blank"></a>
+//                 </li>`;
+//             }
+//             if(output2 !== ""){
+//               document.getElementById("news-articles").innerHTML=output2;  
+//             }
+//             else{
+//                 $("#news-articles").html("<h1 class="not-found">No article was found based on the search.</h1>");
+//             } 
+//           }
+//         });
+//        }
+//     });
+// });
 
 
 
