@@ -62,8 +62,9 @@ $(document).ready(function(){
             else{
                 $("#news-articles").html("<h1 class="not-found">No article was found based on the search.</h1>");
             } 
-          }   
-      }
+          }
+        });
+       }
     });
 });
 
