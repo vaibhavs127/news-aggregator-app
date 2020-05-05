@@ -56,11 +56,13 @@ $(document).ready(function(){
                    <a class="article-link" href="${art.url}" target="_blank"></a>
                 </li>`;
             }
-            if(output2 !== ""){
+            if(output2 !== "")
+            {
               document.getElementById("news-articles").innerHTML=output2;  
             }
-            else{
-                $("#news-articles").html("<h1>No article was found based on the search.</h1>");
+            else
+            {
+              $("#news-articles").html("<h1>No article was found based on the search.</h1>")
             } 
           })
         });
