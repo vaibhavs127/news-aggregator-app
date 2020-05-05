@@ -2,7 +2,7 @@ const url ='http://newsapi.org/v2/top-headlines?' +
           'country=in&' +
           'apiKey=5da46edada014d7088420f175f3c0944';
 
-$(document).ready(async function news(){
+jQuery(document).ready(async function news(){
          await fetch(url)
         .then((res) => res.json())
         .then((articles) => {
