@@ -62,7 +62,8 @@ $(document).ready(function(){
             }
             else
             {
-              $("#news-articles").html("<h1>No article was found based on the search.</h1>")
+//               $("#news-articles").html("<h1>No article was found based on the search.</h1>")
+              document.getElementById("news-articles").innerHTML="<h1>No article was found based on the search.</h1>";
             } 
           })
         });
