@@ -38,7 +38,7 @@ $(document).ready(function(){
           method: "GET",
           dataType: "json",
           
-            success: function(news){
+            success: (function(news){
             let output2 = "";
             let articals = news.articles;
             
@@ -62,7 +62,7 @@ $(document).ready(function(){
             else{
                 $("#news-articles").html("<h1 class="not-found">No article was found based on the search.</h1>");
             } 
-          }
+          })
         });
        }
     });
