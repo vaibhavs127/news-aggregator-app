@@ -127,3 +127,7 @@ p.article-description
   bottom: 0;
   right: 0;
 }
+.not-found
+{
+  display:none;
+}
