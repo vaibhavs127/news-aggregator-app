@@ -38,6 +38,23 @@ body
   transition: all 0.4s;
 }
 
+option.one
+{
+  cursor:pointer;
+  color:yellow;
+}
+
+option.two
+{
+  cursor:pointer;
+  color:yellow;
+}
+option:hover
+{
+  transform: scale(1.03);
+  transition: all 0.4s;
+}
+
 #news-articles 
 {
   width: 100%;
