@@ -71,5 +71,8 @@ $(document).ready(function(){
     });
 });
 
-
+function setStyleSheet(style){
+       var stylesheet = document.getElementById("stylesheet");
+       stylesheet.setAttribute('href', style);
+    }
 
