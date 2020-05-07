@@ -1,4 +1,4 @@
-const url ='https://newsapi.org/v2/top-headlines?' +
+const url ='http://newsapi.org/v2/top-headlines?' +
           'country=in&' +
           'apiKey=5da46edada014d7088420f175f3c0944';
 
